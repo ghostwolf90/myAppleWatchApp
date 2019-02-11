@@ -20,6 +20,7 @@
 		5FD1EAFF221063FB0054531E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EAFE221063FB0054531E /* ExtensionDelegate.swift */; };
 		5FD1EB01221063FB0054531E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EB00221063FB0054531E /* NotificationController.swift */; };
 		5FD1EB03221063FC0054531E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD1EB02221063FC0054531E /* Assets.xcassets */; };
+		5FD1EB1522106DD60054531E /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EB1322106D560054531E /* ContactRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		5FD1EB02221063FC0054531E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD1EB04221063FC0054531E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FD1EB05221063FC0054531E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5FD1EB1322106D560054531E /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		5FD1EAFB221063FB0054531E /* myAppleWatchApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5FD1EB1322106D560054531E /* ContactRow.swift */,
 				5FD1EAFC221063FB0054531E /* InterfaceController.swift */,
 				5FD1EAFE221063FB0054531E /* ExtensionDelegate.swift */,
 				5FD1EB00221063FB0054531E /* NotificationController.swift */,
@@ -303,6 +306,7 @@
 				5FD1EB01221063FB0054531E /* NotificationController.swift in Sources */,
 				5FD1EAFF221063FB0054531E /* ExtensionDelegate.swift in Sources */,
 				5FD1EAFD221063FB0054531E /* InterfaceController.swift in Sources */,
+				5FD1EB1522106DD60054531E /* ContactRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
