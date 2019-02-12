@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9F2A772212A93F003CB495 /* EmptyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F2A762212A93F003CB495 /* EmptyRow.swift */; };
 		5FD1EADA221063F80054531E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EAD9221063F80054531E /* AppDelegate.swift */; };
 		5FD1EADC221063F80054531E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1EADB221063F80054531E /* ViewController.swift */; };
 		5FD1EADF221063F80054531E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD1EADD221063F80054531E /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F9F2A762212A93F003CB495 /* EmptyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRow.swift; sourceTree = "<group>"; };
 		5FD1EAD6221063F80054531E /* myAppleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myAppleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD1EAD9221063F80054531E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD1EADB221063F80054531E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				5FD1EB1322106D560054531E /* ContactRow.swift */,
+				3F9F2A762212A93F003CB495 /* EmptyRow.swift */,
 				5FD1EAFC221063FB0054531E /* InterfaceController.swift */,
 				5FD1EAFE221063FB0054531E /* ExtensionDelegate.swift */,
 				5FD1EB00221063FB0054531E /* NotificationController.swift */,
@@ -306,6 +309,7 @@
 				5FD1EB01221063FB0054531E /* NotificationController.swift in Sources */,
 				5FD1EAFF221063FB0054531E /* ExtensionDelegate.swift in Sources */,
 				5FD1EAFD221063FB0054531E /* InterfaceController.swift in Sources */,
+				3F9F2A772212A93F003CB495 /* EmptyRow.swift in Sources */,
 				5FD1EB1522106DD60054531E /* ContactRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

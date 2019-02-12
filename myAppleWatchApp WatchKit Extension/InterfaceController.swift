@@ -13,6 +13,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var Table: WKInterfaceTable!
+    @IBOutlet weak var emptyTable: WKInterfaceTable!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -22,6 +23,13 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        showEmptyData()
+    }
+    
+    func showEmptyData() {
+        self.emptyTable.setNumberOfRows(1, withRowType: "EmptyRow")
+        let row = self.emptyTable.rowController(at: 0) as? EmptyRow
+        row?.titleLabel.setText("沒有任何訊息")
     }
     
     struct ContactStruct{
@@ -33,8 +41,8 @@ class InterfaceController: WKInterfaceController {
     func loadData() {
         //Get API Call Back...
         //postData {
-        let contact1 = ContactStruct(name: "123", image: "", time: "1234")
-        let contact2 = ContactStruct(name: "321", image: "", time: "4321")
+        let contact1 = ContactStruct(name: "123", image: "", time: "12:34")
+        let contact2 = ContactStruct(name: "321", image: "", time: "43:21")
         let data:[ContactStruct] = [contact1, contact2] //api returned data...
         
         self.Table.setNumberOfRows(data.count, withRowType: "ContactRow")
@@ -44,7 +52,7 @@ class InterfaceController: WKInterfaceController {
         for item in data.enumerated() {
             if let row = self.Table.rowController(at: item.offset) as? ContactRow {
                 row.nameLabel.setText(item.element.name)
-                //assign value to lable/image......
+                row.timeLabel.setText(item.element.time)
             }
         }
         

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -52,22 +52,26 @@
                         </table>
                         <table alignment="left" id="ucq-7j-K7w">
                             <items>
-                                <tableRow identifier="EmptyRow" id="22q-GD-4Pu">
+                                <tableRow identifier="EmptyRow" id="22q-GD-4Pu" customClass="EmptyRow" customModule="myAppleWatchApp_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="qJJ-Im-Mo7">
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="沒有任何訊息" id="iIY-au-YSa"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="iIY-au-YSa" id="D7o-oQ-CUL"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
                         <outlet property="Table" destination="TiR-c7-LKt" id="ViQ-sc-cdL"/>
+                        <outlet property="emptyTable" destination="ucq-7j-K7w" id="Rzu-cG-9F4"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="177" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
